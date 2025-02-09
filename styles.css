@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eaeaea; /* لون خلفية خفيف للصفحة */
+}
+
+.splash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    animation: rotate 7s;
+}
+
+.hidden {
+    display: none;
+}
+
+#main-content {
+    text-align: center;
+    background-image: url('https://via.placeholder.com/800x600/cccccc/ffffff?text=خلفية+جميلة'); /* يمكنك تغيير الرابط هنا */
+    background-size: cover;
+    background-position: center; /* لضمان تموضع الصورة بشكل جيد */
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px; /* إضافة مساحة داخلية */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* تأثير الظل على النص */
+}
+
+.main-interface img {
+    max-width: 80%; /* لضمان عدم تجاوز الصورة حجم الواجهة */
+    height: auto;
+    margin-bottom: 20px; /* إضافة مسافة بين الصورة والنصوص */
+}
+
+h1 {
+    font-size: 2.5em; /* حجم خط أكبر للعناوين */
+    margin: 10px 0; /* إضافة مسافة فوق وتحت العنوان */
+}
+
+p {
+    font-size: 1.2em; /* حجم خط أكبر للنصوص */
+}
+
+#footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* لون خلفية للفوتر */
+    color: white;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
