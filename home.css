@@ -51,7 +51,7 @@ h1 {
 
 .icon:active {
     transform: scale(0.9) rotate(-5deg); /* تصغير الأيقونة عند الضغط عليها */
-    transition: transform 0.1s ease; /* تأثير الانتقال عند الضغط */
+    transition: transform 0.7s ease; /* تأثير الانتقال عند الضغط */
 }
 
 /* تخصيص الأيقونات */
