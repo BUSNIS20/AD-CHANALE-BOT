@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* لون خلفية فاتح */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px; /* مسافة تحت العنوان */
+}
+
+.icon {
+    width: 100px; /* حجم الأيقونات */
+    height: 100px; /* حجم الأيقونات */
+    margin: 10px; /* مسافة بين الأيقونات */
+    cursor: pointer; /* إظهار المؤشر عند المرور فوق الأيقونة */
+    transition: transform 0.3s ease; /* إضافة تأثير الانتقال */
+}
+
+.icon:hover {
+    transform: scale(1.1); /* تكبير الأيقونة عند المرور فوقها */
+}
+
+.icon-container {
+    display: flex; /* استخدام flex لترتيب الأيقونات أفقياً */
+    justify-content: center; /* محاذاة الأيقونات في الوسط */
+    flex-wrap: wrap; /* السماح بتغليف الأيقونات إذا كانت كبيرة جداً */
+}

@@ -1,0 +1,44 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333; /* لون خلفية داكن */
+    color: white; /* لون النص */
+    font-family: Arial, sans-serif;
+}
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center; /* محاذاة النص للوسط */
+    padding: 20px; /* مساحة داخلية */
+    border-radius: 15px; /* زوايا مدورة */
+    background-color: rgba(0, 0, 0, 0.7); /* خلفية شفافة */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* ظل */
+}
+
+.rotate {
+    width: 100px; /* حجم صورة التحميل */
+    height: 100px; /* حجم صورة التحميل */
+    animation: rotation 2s infinite linear; /* تأثير الدوران */
+    margin-bottom: 20px; /* مسافة تحت الصورة */
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.title {
+    font-size: 24px; /* حجم الخط */
+    margin-top: 20px; /* مسافة بين الصورة والنص */
+}
