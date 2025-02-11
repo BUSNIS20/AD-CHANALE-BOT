@@ -60,25 +60,25 @@ h1 {
 .icon-wallet {
     position: absolute; /* موضع مطلق */
     right: 30px; /* المسافة من اليمين */
-    bottom: -710px; /* المسافة من الأسفل */
+    bottom: -700px; /* المسافة من الأسفل */
 }
 
 .icon-user {
     position: absolute; /* موضع مطلق */
     right: 557.5px; /* المسافة من اليمين */
-    bottom: -710px; /* المسافة من الأسفل */
+    bottom: -700px; /* المسافة من الأسفل */
 }
 
 .icon-tasks {
     position: absolute; /* موضع مطلق */
     right: 1142.5px; /* المسافة من اليمين */
-    bottom: -710px; /* المسافة من الأسفل */
+    bottom: -700px; /* المسافة من الأسفل */
 }
 
 .icon-home {
     position: absolute; /* موضع مطلق */
     right: 1720px; /* المسافة من اليمين */
-    bottom: -710px; /* المسافة من الأسفل */
+    bottom: -700px; /* المسافة من الأسفل */
 }
 
 /* إضافة تأثيرات الأيقونة الصغيرة */
