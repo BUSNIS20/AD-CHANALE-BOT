@@ -11,7 +11,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #333; /* لون خلفية داكن */
+            background: url('face.png') no-repeat center center fixed; /* تغيير الخلفية إلى face.png */
+            background-size: cover; /* تغطية الخلفية بالكامل */
             color: white; /* لون النص */
             font-family: Arial, sans-serif;
         }
@@ -43,7 +44,7 @@
 </head>
 <body>
     <div class="loading-container">
-        <img src="face.png" alt="Loading" class="rotate"> <!-- صورة التحميل -->
+        <img src="reload.png" alt="Loading" class="rotate"> <!-- تغيير الصورة إلى reload.png -->
         <div class="title">جاري تهيئة التطبيق</div> <!-- النص الأساسي -->
     </div>
 
