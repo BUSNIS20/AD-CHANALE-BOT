@@ -7,6 +7,18 @@ body {
     background-attachment: fixed; /* جعل الخلفية ثابتة */
 }
 
+.user-id {
+    position: absolute; /* موضع مطلق */
+    top: 20px; /* المسافة من الأعلى */
+    left: 20px; /* المسافة من اليسار */
+    font-size: 14px; /* حجم الخط */
+    color: #333; /* لون النص */
+    background: rgba(255, 255, 255, 0.7); /* خلفية شفافة */
+    padding: 5px; /* مسافة داخلية */
+    border-radius: 5px; /* زوايا دائرية */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* إضافة ظل */
+}
+
 .container {
     max-width: 800px;
     margin: auto;
