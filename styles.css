@@ -4,41 +4,70 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #333; /* لون خلفية داكن */
+    background: #000; /* خلفية سوداء */
     color: white; /* لون النص */
     font-family: Arial, sans-serif;
+    position: relative;
 }
 
 .loading-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
     text-align: center; /* محاذاة النص للوسط */
-    padding: 20px; /* مساحة داخلية */
-    border-radius: 15px; /* زوايا مدورة */
-    background-color: rgba(0, 0, 0, 0.7); /* خلفية شفافة */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* ظل */
 }
 
-.rotate {
-    width: 100px; /* حجم صورة التحميل */
-    height: 100px; /* حجم صورة التحميل */
-    animation: rotation 2s infinite linear; /* تأثير الدوران */
-    margin-bottom: 20px; /* مسافة تحت الصورة */
+.loading-image {
+    width: 30vw; /* حجم ابتدائي لصورة التحميل حسب عرض الشاشة */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    max-width: 160px; /* الحد الأقصى للحجم */
+    max-height: 120px; /* الحد الأقصى للحجم */
+    animation: scale 1s infinite alternate; /* تأثير التكبير والتصغير */
 }
 
-@keyframes rotation {
+@keyframes scale {
     from {
-        transform: rotate(0deg);
+        transform: scale(1);
     }
     to {
-        transform: rotate(360deg);
+        transform: scale(1.2);
     }
 }
 
-.title {
-    font-size: 24px; /* حجم الخط */
-    margin-top: 20px; /* مسافة بين الصورة والنص */
+.loading-text {
+    font-size: 4vw; /* حجم الخط حسب عرض الشاشة */
+    position: absolute;
+    bottom: 5%; /* مسافة من الأسفل */
+    left: -90%; /* محاذاة النص إلى اليسار */
+}
+
+.dots {
+    display: inline-block;
+    animation: dots 1.5s infinite; /* تأثير النقاط */
+}
+
+@keyframes dots {
+    0%, 20% {
+        content: '';
+    }
+    30% {
+        content: '.';
+    }
+    50% {
+        content: '..';
+    }
+    70% {
+        content: '...';
+    }
+    100% {
+        content: '';
+    }
+}
+
+/* استعلامات الوسائط لتحسين العرض على الهواتف */
+@media (max-width: 600px) {
+    .loading-image {
+        width: 70vw; /* حجم أكبر على الشاشات الصغيرة */
+    }
+
+    .loading-text {
+        font-size: 6vw; /* حجم أكبر للنص على الشاشات الصغيرة */
+    }
 }

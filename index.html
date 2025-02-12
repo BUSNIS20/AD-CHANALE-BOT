@@ -3,57 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>جاري تهيئة التطبيق</title>
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: url('face.png') no-repeat center center fixed; /* تغيير الخلفية إلى face.png */
-            background-size: cover; /* تغطية الخلفية بالكامل */
-            color: white; /* لون النص */
-            font-family: Arial, sans-serif;
-        }
-        .loading-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-        .rotate {
-            width: 100px; /* حجم صورة التحميل */
-            height: 100px; /* حجم صورة التحميل */
-            animation: rotation 2s infinite linear; /* تأثير الدوران */
-        }
-        @keyframes rotation {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
-        }
-        .title {
-            font-size: 24px; /* حجم الخط */
-            margin-top: 20px; /* مسافة بين الصورة والنص */
-        }
-    </style>
+    <title>Loading Animation</title>
+    <link rel="stylesheet" href="styles.css"> <!-- ربط ملف CSS -->
 </head>
 <body>
     <div class="loading-container">
-        <img src="reload.png" alt="Loading" class="rotate"> <!-- تغيير الصورة إلى reload.png -->
-        <div class="title">جاري تهيئة التطبيق</div> <!-- النص الأساسي -->
+        <img src="Quixle.png" alt="Loading" class="loading-image">
+        <div class="loading-text">loading<span class="dots">...</span></div>
     </div>
-
     <script>
-        // محاكاة تحميل التطبيق
-        setTimeout(() => {
-            // بعد انتهاء التحميل، يمكنك الانتقال إلى صفحة التطبيق
-            window.location.href = "home.html"; // التوجيه إلى صفحة home.html
-        }, 6000); // 6 ثواني
+        // الانتقال إلى home.html بعد 5 ثوانٍ (5000 مللي ثانية)
+        setTimeout(function() {
+            window.location.href = 'home.html';
+        }, 5000);
     </script>
 </body>
 </html>

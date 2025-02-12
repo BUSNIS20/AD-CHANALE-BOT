@@ -11,10 +11,10 @@ body {
     max-width: 800px;
     margin: auto;
     text-align: center;
-    background: rgba(255, 255, 255, 0.0); /* خلفية شفافة بدلاً من البيضاء */
+    background: rgba(255, 255, 255, 0.8); /* خلفية بيضاء شفافة */
     border-radius: 8px; /* زوايا دائرية */
     padding: 40px; /* مسافة داخلية حول المحتوى */
-    box-shadow: none; /* إزالة الظل */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* إضافة ظل */
 }
 
 h1 {
@@ -32,10 +32,10 @@ h1 {
     bottom: 20px; /* المسافة من الأسفل */
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.0); /* خلفية شفافة بدلاً من البيضاء */
+    background: rgba(255, 255, 255, 0.8); /* خلفية بيضاء شفافة */
     border-radius: 10px; /* زوايا دائرية */
     padding: 10px 0; /* مسافة داخلية */
-    box-shadow: none; /* إزالة الظل */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* إضافة ظل */
 }
 
 .icon {
@@ -51,7 +51,7 @@ h1 {
 
 .icon:active {
     transform: scale(0.9) rotate(-5deg); /* تصغير الأيقونة عند الضغط عليها */
-    transition: transform 0.7s ease; /* تأثير الانتقال عند الضغط */
+    transition: transform 0.1s ease; /* تأثير الانتقال عند الضغط */
 }
 
 /* تخصيص الأيقونات */
